@@ -162,6 +162,7 @@ main.container {
   flex-direction: column;
   justify-content: center;
 }
+
 ul.sidenav-items-1 li a.active {
   background: #f5f5f5;
 }
@@ -242,4 +243,7 @@ article.singlevideo {
 
 article.singlevideo * {
   /* border: 1px solid blue; */
+}
+
+.singlevideo-stacked {
 }
