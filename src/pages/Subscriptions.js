@@ -1,10 +1,16 @@
 import React from "react";
+import Singlevideo from "../components/Singlevideo";
+import { subscriptionsData } from "../videolist";
 
 const Subscriptions = () => {
+  const [subscribedVideos, setSubscribedVideos] =
+    React.useState(subscriptionsData);
   return (
-    <div>
-      <h2>Subscriptions goes here</h2>
-    </div>
+    <section className="videos-section">
+      {subscriptionsData.map((item) => {
+        return <Singlevideo {...item} />;
+      })}
+    </section>
   );
 };
 

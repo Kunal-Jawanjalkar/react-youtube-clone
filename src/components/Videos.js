@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import videosList from "../videolist";
-import data from "../videolist";
 import Singlevideo from "./Singlevideo";
+import { videosList } from "../videolist";
 
 const Videos = () => {
-  const [videosList, setvideoList] = useState(data);
+  const [Videos, setVideos] = useState(videosList);
 
   return (
     <>
       <section className="section videos-section">
-        {videosList.map((video, index) => {
+        {Videos.map((video, index) => {
           return <Singlevideo key={index} {...video} />;
         })}
       </section>
